@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: spring-boot-app
-        image: tanmayc2001/ultimate-cicd:20
+        image: tanmayc2001/jenkins-cicd:20
         ports:
         - containerPort: 8080
       labels:
