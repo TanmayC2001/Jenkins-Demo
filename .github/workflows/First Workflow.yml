@@ -15,3 +15,4 @@ jobs:
             echo "Hello World"
             ls -ltra
             echo "This is a message from github actions workflow" >> README.md
+            cat README.md
