@@ -1,0 +1,19 @@
+name: My First Workflow
+
+on: push
+
+jobs:
+  first_job:
+    runs-on: ubuntu-latest
+    steps:
+        - name: OpenCommit — improve commits with AI 🧙
+          uses: di-sukharev/opencommit@github-action-v1.0.2
+
+        - name: Checkout Repository
+          uses: actions/checkout@v4
+
+        - name: Welcome
+          run: |
+            echo "Hello World"
+            ls -ltra
+            echo "This is a message from github actions workflow" >> README.md
